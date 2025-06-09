@@ -20,3 +20,4 @@ spec:
           env:
             - name: MONGO_URI
               value: mongodb://mongo:27017/kaiburr
+
