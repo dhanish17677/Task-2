@@ -72,15 +72,11 @@ This repository contains my implementation of **Task 2** for Kaiburr’s assessm
 
 ✅ The backend API is exposed via:
 
-    ```
-    http://<minikube_ip>:30080/tasks
-    ```
+http://<minikube_ip>:30080/tasks
 
 👉 Get Minikube IP:
 
-    ```bash
-    minikube ip
-    ```
+minikube ip
 
 ---
 
