@@ -19,52 +19,52 @@ This repository contains my implementation of **Task 2** for Kaiburr’s assessm
 
 1. Start **Minikube**:
 
-    ```bash
+    
     minikube start
-    ```
+    
 
 2. Apply MongoDB PersistentVolume and PVC:
 
-    ```bash
+    
     kubectl apply -f k8s/mongo-pv.yaml
-    ```
+    
 
 3. Deploy MongoDB:
 
-    ```bash
+    
     kubectl apply -f k8s/mongo-deployment.yaml
-    ```
+    
 
 4. Deploy MongoDB Service:
 
-    ```bash
+    
     kubectl apply -f k8s/mongo-service.yaml
-    ```
+    
 
 5. Deploy the Java backend app:
 
-    ```bash
+    
     kubectl apply -f k8s/app-deployment.yaml
-    ```
+    
 
 6. Expose the backend app via NodePort service:
 
-    ```bash
+    
     kubectl apply -f k8s/app-service.yaml
-    ```
+    
 
 7. Verify deployments:
 
-    ```bash
+    
     kubectl get pods
     kubectl get svc
-    ```
+    
 
 8. (Optional) Port-forward to access the app locally:
 
-    ```bash
+    
     kubectl port-forward pod/<task-api-pod-name> 8080:8080
-    ```
+    
 
 ---
 
